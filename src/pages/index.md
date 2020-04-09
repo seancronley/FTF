@@ -1,5 +1,6 @@
 ---
 templateKey: index-page
+path : /donate
 mainpitch:
   title: Why Feed the FrontLine?
   description: >
