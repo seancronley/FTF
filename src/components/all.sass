@@ -10,9 +10,6 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: 	#0000FF
 
-.navbar .navbar-menu
-  box-shadow:none !important
-
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -68,18 +65,13 @@ $black: 	#0000FF
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
-.margin-top-0
-  margin-top: 0 !important
 
-.navbar-item .icon
-  color: $primary
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
@@ -112,16 +104,6 @@ $menu-label-color: $white-ter
     vertical-align: middle
     display: inline
 
-// blog roll
-.blog-list-item.is-featured
-  background-color: #add8e6;
-.blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
-
 
 @import "~bulma"
 
@@ -143,3 +125,54 @@ $menu-label-color: $white-ter
 .main-logo 
   width: 100%;
 
+#branding
+  background-color: #274C77;
+  height: 60px;
+
+#branding .container 
+  padding-top: 18px;
+
+#branding .container .navbar-item
+  color: #E7ECEF
+  line-height: 1em;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+  font-weight: normal;
+  font-weight: 500;
+  display:inline
+  display: inline-block
+
+.container 
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+.navigation-left
+  float: left;
+  width: 30%;
+
+.navigation-right
+  float: right;
+  margin: 0 auto;
+  width: 20%;
+  
+
+.center-logo
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: #4066d8;
+  overflow: hidden;
+
+h1
+  color: white;
+
+h3
+  color: white;
+  
+h5 
+  color: white;
+
+.blue
+  background-color: #4066d8;

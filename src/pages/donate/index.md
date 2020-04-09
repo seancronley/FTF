@@ -14,12 +14,6 @@ In addition to our general fund for all of the Greater Boston area, we have one 
 
 If you want to organize fund-raising and restaurants in a particular town or region, take a look at our town & regional programs page and/or contact us by email at feedthefightboston@gmail.com.
 
-### #3. The $500+ Challenge!
-(Donations for a favorite restaurant)
-Most of our donors just want to help the community; but some donors have asked if they could support a particular restaurant.  SO... we challenge you to make a donation of $500 or more and then, if you want, to specify a specific restaurant to receive those funds. The restaurant must be on the list of FTFB's affiliated restaurants. If a favorite restaurant is not on our list, then send FTFB email at feedthefightboston@gmail.com and we'll see if we can get them on board.
-
-To direct funds to a restaurant: the donation needs to be $500 or more, the restaurant must be affiliated with FTFB, and then you enter the restaurant's name and location in the comment field of the GoFundMe donation form.
-
 
 ### How else can I help?
 ### Spread the word​:

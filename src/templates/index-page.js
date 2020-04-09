@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-import logo from '../img/MainLogoCropped.png'
+import logo from '../img/FTF-SuperCropped.png'
 
 export const IndexPageTemplate = ({
   heading,
@@ -13,15 +13,10 @@ export const IndexPageTemplate = ({
   description,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <img src={logo} alt="website logo"/>
-      
+    <div className="blue">
+      <div className="center-logo">
+        <img src={logo} alt="website logo"/>
+      </div>
     </div>
     <section className="section section--gradient">
       <div className="container">
