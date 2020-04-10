@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import dcLogo from '../img/smallLogo.png'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navigation">
             <div className="navigation-left">
-              <Link className="navbar-item" to="/">
+              <Link className="navbar-item dcLogo" to="/">
                 Home
               </Link>
               <Link className="navbar-item" to="/donate">
