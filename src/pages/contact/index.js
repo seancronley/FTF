@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import emailjs from 'emailjs-com';
 
 function encode(data) {
   return Object.keys(data)
@@ -11,7 +12,8 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+     this.handleChange = this.handleChange.bind(this);
+     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange = e => {
@@ -19,18 +21,16 @@ export default class Index extends React.Component {
   }
 
   handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
+    e.preventDefault();
+    const templateId = 'template_RJoI2qym';
+    let templateParams = {message: this.state.message, name: this.state.name, email: this.state.email, subject:this.state.subject}
+    emailjs.send(
+      'gmail', 'template_RJoI2qym', templateParams, 'user_H2E1pXyy1smKVdF0JyBqb'
+      ).then(res => {
+        navigate("/contact/thanks")
+      }).catch(err => {
+        console.log(err);
+      })
   }
 
   render() {
@@ -40,10 +40,10 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="content">
               <h1>Contact</h1>
+              <p>Please send us a message and we'll get back to you soon!</p>
+              <br/>
               <form
                 name="contact"
-                method="post"
-                action="/contact/thanks/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
@@ -115,7 +115,7 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="field">
+                <div className="field send-button-padding">
                   <button className="button is-link" type="submit">
                     Send
                   </button>

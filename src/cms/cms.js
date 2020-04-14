@@ -6,7 +6,7 @@ import AboutPagePreview from './preview-templates/AboutPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
-import DonatePagePreview from './preview-templates/DonatePagePreview'
+import GetInvolvedPagePreview from './preview-templates/GetInvolvedPagePreview'
 import RestaurantsPagePreview from './preview-templates/RestaurantsPagePreview'
 
 
@@ -17,5 +17,5 @@ CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
-CMS.registerPreviewTemplate('donate', DonatePagePreview)
+CMS.registerPreviewTemplate('get-involved', GetInvolvedPagePreview)
 CMS.registerPreviewTemplate('restaurants', RestaurantsPagePreview)

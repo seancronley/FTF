@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 
-export const RestaurantsPageTemplate = ({ title, content, contentComponent, subtitle }) => {
+export const RestaurantsPageTemplate = ({ title, content, contentComponent, subtitle1 }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -18,7 +18,7 @@ export const RestaurantsPageTemplate = ({ title, content, contentComponent, subt
                 {title}
               </h2>
               <h3 className="subtitle">
-                {subtitle}
+                {subtitle1}
               </h3>
               <PageContent className="content" content={content} />
             </div>
@@ -31,7 +31,7 @@ export const RestaurantsPageTemplate = ({ title, content, contentComponent, subt
 
 RestaurantsPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle : PropTypes.string,
+  subtitle1 : PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -44,7 +44,7 @@ const RestaurantsPage = ({ data }) => {
       <RestaurantsPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        subtitle={post.frontmatter.subtitle}
+        subtitle1={post.frontmatter.subtitle1}
         content={post.html}
       />
     </Layout>
@@ -63,7 +63,6 @@ export const restaurantsPageQuery = graphql`
       html
       frontmatter {
         title
-        subtitle
       }
     }
   }
